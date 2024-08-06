@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Pages Site</title>
+    <title>Consultancy Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: #0073e6;
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -32,32 +32,93 @@
             width: 100%;
             bottom: 0;
         }
+        .services, .testimonials {
+            display: flex;
+            justify-content: space-around;
+        }
+        .services div, .testimonials div {
+            background-color: #fff;
+            padding: 1em;
+            margin: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+        .contact-form button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
+        <h1>Consultancy Services</h1>
+        <p>Providing expert solutions for your business</p>
     </header>
     <main>
         <section>
-            <h2>About Me</h2>
-            <p>Hi! I'm [Your Name], a web developer passionate about creating awesome websites and applications. This is my first page hosted on GitHub Pages.</p>
+            <h2>Our Services</h2>
+            <div class="services">
+                <div>
+                    <h3>Business Strategy</h3>
+                    <p>We help you define your business strategy and provide guidance to achieve your goals.</p>
+                </div>
+                <div>
+                    <h3>Market Analysis</h3>
+                    <p>Our market analysis services provide deep insights into your target market and competitors.</p>
+                </div>
+                <div>
+                    <h3>Operational Excellence</h3>
+                    <p>Optimize your operations for maximum efficiency and profitability with our expert advice.</p>
+                </div>
+            </div>
         </section>
         <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/yourusername/project1">Project 1</a> - A cool project that does amazing things.</li>
-                <li><a href="https://github.com/yourusername/project2">Project 2</a> - Another awesome project with great features.</li>
-                <li><a href="https://github.com/yourusername/project3">Project 3</a> - A project that solves many problems.</li>
-            </ul>
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <div>
+                    <p>"The consultancy team helped us transform our business strategy. Highly recommend!" - Client A</p>
+                </div>
+                <div>
+                    <p>"Their market analysis was spot on and extremely valuable for our business decisions." - Client B</p>
+                </div>
+                <div>
+                    <p>"Thanks to their operational excellence advice, our efficiency has greatly improved." - Client C</p>
+                </div>
+            </div>
         </section>
         <section>
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:your.email@example.com">your.email@example.com</a> or follow me on <a href="https://twitter.com/yourusername">Twitter</a>.</p>
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Consultancy Services. All rights reserved.</p>
     </footer>
 </body>
 </html>
